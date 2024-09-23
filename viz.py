@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 
 # Load and prepare the data
-data = pd.read_csv("C:/Users/moe82/Desktop/masters/MSBA 325/Lebanon Tourism.csv")
+data = pd.read_csv("Lebanon Tourism.csv")
 data['Governorate'] = data['refArea'].apply(lambda x: x.split('/')[-1].replace('_Governorate', ''))
 
 # Sidebar for visualization selection
